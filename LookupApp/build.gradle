@@ -4,6 +4,7 @@ apply plugin: 'scala'
 AppName = 'LookupApp'
 
 repositories {
+	mavenRepo urls: "http://repo.typesafe.com/typesafe/releases/"
 	mavenCentral()
 }
 
@@ -32,12 +33,14 @@ dependencies {
 	scalaTools  (
 		[group: "org.scala-lang", name: "scala-compiler",version: "2.9.2"],
 		[group: "org.scala-lang", name: "scala-library",version: "2.9.2"],
-		fileTree(dir: 'jars', includes: ['*.jar'])
 	)
 	
 	compile (
 		[group: "org.scala-lang", name: "scala-library",version: "2.9.2"],
-		fileTree(dir: 'jars', includes: ['*.jar'])
+		[group: "io.netty", name: "netty",version: "3.3.1.Final"],
+		[group: "com.typesafe.akka", name: "akka-actor",version: "2.0.2"],
+		[group: "com.typesafe.akka", name: "akka-kernel",version: "2.0.2"],
+		[group: "com.typesafe.akka", name: "akka-remote",version: "2.0.2"],
 	)
 }
 
