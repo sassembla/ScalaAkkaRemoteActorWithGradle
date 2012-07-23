@@ -1,4 +1,4 @@
-task runAllJars {//not work. this will lock in CalcApp:runJar. should be work in parallel.
+/*task runAllJars {//not work. this will lock in CalcApp:runJar. should be work in parallel.
 	CalcApp:runJar
 	LookupApp:runJar
-}
+}*/
