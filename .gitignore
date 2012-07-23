@@ -4,3 +4,9 @@
 .gradle/*
 
 build/*
+
+CalcApp/.gradle/*
+CalcApp/build/*
+
+LookupApp/.gradle/*
+LookupApp/build/*
